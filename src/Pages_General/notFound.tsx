@@ -8,9 +8,9 @@ import { fadeIn } from "@/animation/motionVariants";
 function NotFound() {
   const navigate = useNavigate();
   return (
-    <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex flex-col items-center justify-center min-h-screen space-y-4 bg-gray-900">
-      <h1 className="text-4xl font-extrabold text-white">404 - Page Not Found</h1>
-      <Button className="hover:scale-105 transition text-white border-gray-600 bg-gray-800" onClick={() => navigate("/")}>Go Home</Button>
+    <motion.div initial="hidden" animate="visible" variants={fadeIn} className="flex flex-col items-center justify-center min-h-screen w-screen space-y-4">
+      <h1 className="text-4xl font-extrabold">404 - Page Not Found</h1>
+      <Button className="hover:scale-105 transition" onClick={() => navigate("/")}>Go Home</Button>
     </motion.div>
   );
 }

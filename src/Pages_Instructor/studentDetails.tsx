@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
-import ThemeToggle from "@/components/other/themeToggle.tsx";
+import ThemeToggle from "@/components/themes/themeToggle";
 // ---- Dummy Data ----
 import { dummyStudents } from "@/dummyData/dummyStudents";
 const dummyStudent = dummyStudents[0];

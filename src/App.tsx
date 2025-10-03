@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
+// ---- Styles ----
+import './index.css';
 // ---- Pages ----
 import LandingPage from "@/Pages_General/landingPage.tsx";
 import NotFound from "@/Pages_General/notFound.tsx";
@@ -12,7 +14,7 @@ import StudentDetails from "@/Pages_Instructor/studentDetails";
 
 // ---- Main App ----
 export default function App() {
-  const [userType, setUserType] = useState<"instructor" | "student" | null>(null);
+  const [userType, setUserType] = useState<"instructor" | "student" | null>("student");
   const handleLogout = () => setUserType(null);
 
   return (

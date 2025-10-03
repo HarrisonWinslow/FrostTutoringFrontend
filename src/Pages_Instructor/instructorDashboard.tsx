@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import ThemeToggle from "@/components/other/themeToggle.tsx";
+import ThemeToggle from "@/components/themes/themeToggle";
 // ---- Dummy Data ----
 import { dummyInstructors } from "@/dummyData/dummyInstructors";
 const dummyInstructor = dummyInstructors[0];
